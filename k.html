@@ -11,6 +11,7 @@
       font-family: 'Open Sans', sans-serif;
       background: url("kertas.jpg");
       background-size: cover;
+      background-attachment: fixed;
       cursor: pointer;
     }
 
@@ -205,10 +206,12 @@
     updateCountdown();
     setInterval(updateCountdown, 1000);
 
-    // Play audio on click
+    // Play audio on click (tanpa trigger re-render)
     document.body.addEventListener("click", () => {
       const audio = document.getElementById("myAudio");
-      audio.play().catch(err => console.log("Gagal memutar audio:", err));
+      if (audio.paused) {
+        audio.play().catch(err => console.log("Gagal memutar audio:", err));
+      }
     });
 
     // Slider
