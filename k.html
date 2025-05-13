@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anniversary Dani & Luthfia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: url("kertas.jpg");
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+      padding: 20px;
+      background-color: rgba(0,0,0,0.3);
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    section {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .countdown {
+      font-size: 2em;
+      margin-top: 1em;
+      color: #333;
+    }
+
+    .slider-container {
+      position: relative;
+      width: 90%;
+      max-width: 300px;
+      height: 500px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1.2s ease-in-out;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    footer {
+      background-color: rgba(0,0,0,0.7);
+      padding: 1em;
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <video class="video-background" autoplay muted loop>
+      <source src="0513 (1).mp4" type="video/mp4">
+      <!-- Fallback jika browser tidak support video -->
+      <img src="20240623_035051_492_IMG_4937.JPG" alt="Fallback Image" style="width:100%;height:100%;object-fit:cover;">
+    </video>
+    
+    <div class="header-content">
+      <h1>Dani & Luthfia</h1>
+      <p>"Tanpa mengurangi rasa hormat, Saya mengundang anda untuk membaca pesan ini."</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Our Journey</h2>
+    <p> Aku masih ingat betul hari pertama kita bertemu, waktu itu di kampus. Pertemuan yang bisa dibilang gak sengaja tapi penuh arti dan kejutan. Kamu salah turun dari angkot, dan akhirnya harus jalan kaki cukup jauh. Teman kamu yang kenal aku langsung minta tolong aku buat jemput kamu. Kita pun akhirnya naik motor bonceng tiga. Dari situ, tanpa kita sadari, cerita kita pun mulai terbentuk. </p>
+    <p> Seiring berjalannya hari, obrolan kita makin intens dan gak ada arah tujuan, lalu perhatian-perhatian kecil mulai terasa, dan akhirnya kita mulai dekat. Ingat nggak, jalan-jalan pertama kita ke Ragunan? Waktu itu kita belum terlalu tahu satu sama lain, tapi rasanya nyaman banget. Lalu kita lanjut ke Taman Mini, terus ke Curug. Dan di hari kita ke Curug itu, ada momen yang nggak bakal pernah aku lupain. kamu ngajak aku ke rumah kamu untuk pertama kalinya. Aku senang tapi juga deg-degan. Tapi sebagai laki-laki yang gantle, aku percaya diri. Karena buatku, itu bukan sekadar ajakan biasa, tapi bentuk kepercayaan dari kamu. </p>
+    <p> Awalnya, hubungan kita masih malu-malu. Kita sepakat untuk keep it private, nggak mau banyak orang tahu, apalagi temen-temen kampus. Tapi waktu kita balik dari Kebun Raya Bogor, mulai berubah yang dimana tadinya keep it private hubungan kita mulai terbuka. Orang-orang mulai tahu, dan aku nggak pernah keberatan. Karena aku bersyukur sama kamu. Bangga bisa ada di samping kamu. </p>
+    <p> Hari-hari setelahnya, kita lewati bareng. Dari kita jalan-jalan, makan bareng, nemenin satu sama lain ke mana pun, bahkan sampai kondangan bareng. Ada hari-hari senang, tapi juga ada hari-hari penuh tantangan. Tapi semua itu terasa lebih ringan karena kamu ada. Karena kita ada buat satu sama lain. </p>
+    <p> Aku bersyukur banget bisa sejauh ini sama kamu. Bangga karena kita bukan cuman jadi pasangan, tapi juga jadi tim yang saling dukung, saling tumbuh, saling menguatkan. Kebersamaan kita bukan cuma tentang tawa, tapi juga tentang saling memahami di saat-saat sulit. </p>
+    <p> Ke depannya, aku harap kita bisa terus bareng-bareng. Saling menguatkan, saling menjaga, saling mendukung mimpi dan tujuan masing-masing. Aku pengen kita terus jadi rumah satu sama lain, sampai kapan pun. Karena kamu, adalah bagian terbaik dari hari-hariku. Bersamamu, aku merasa lengkap. Kamu bukan sekadar pasangan, kamu adalah sahabat terbaikku, pendengar setiaku, dan rumah tempat aku pulang. Hadirmu adalah anugerah yang tak pernah berhenti aku syukuri</p>
+    <p> Terima kasih sudah menjadi bagian dari hidupku. Terima kasih sudah bertahan, berjalan, dan tumbuh bersamaku. Semoga cinta ini terus tumbuh, dan kisah kita terus indah dari hari ke hari, hingga akhir hayat nanti. </p>
+    <div class="countdown" id="countdown"></div>
+  </section>
+
+  <section>
+    <h2>Galeri Kenangan</h2>
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <img src="IMG20230609113824.jpg" alt="Foto 1" class="slide active">
+        <img src="IMG_20230827_134602_133.jpg" alt="Foto 2" class="slide">
+        <img src="20231210_120820.jpg" alt="Foto 3" class="slide">
+        <img src="FIA00013.JPG" alt="Foto 4" class="slide">
+        <img src="20240707_135356.jpg" alt="Foto 5" class="slide">
+        <img src="20241228_134455.jpg" alt="Foto 11" class="slide">
+        <img src="WPB CREAM 2024.00594.jpg" alt="Foto 6" class="slide">
+        <img src="20240217_100810.jpg" alt="Foto 7" class="slide">
+        <img src="20240908_182953.jpg" alt="foto 8" class="slide">
+        <img src="20240623_182757.jpg" alt="Foto 9" class="slide">
+        <img src="FIA00003.JPG" alt="Foto 10" class="slide">
+        <img src="20241013_173851.jpg" alt="foto 11" class="slide">
+        <img src="WPB CREAM 2024.00595.jpg" alt="Foto 12" class="slide">
+        <img src="20250507_173540.jpg" alt="Foto 13" class="slide">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dani & Luthfia | Anniversary</p>
+  </footer>
+
+  <audio id="myAudio" loop>
+    <source src="Lagu.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <script>
+    // Countdown ke tanggal anniversary
+    const targetDate = new Date("2025-05-14T00:00:00");
+    const countdownEl = document.getElementById("countdown");
+
+    function getDiffInMonths(date1, date2) {
+      let years = date2.getFullYear() - date1.getFullYear();
+      let months = date2.getMonth() - date1.getMonth();
+      let totalMonths = years * 12 + months;
+      if (date2.getDate() < date1.getDate()) {
+        totalMonths--;
+      }
+      return totalMonths;
+    }
+
+    function updateCountdown() {
+      const now = new Date();
+      const timeDiff = targetDate - now;
+      if (timeDiff <= 0) {
+        countdownEl.innerHTML = "Selamat Anniversary 21 Bulan sayang!🥰🤗";
+      } else {
+        const totalMonths = getDiffInMonths(now, targetDate);
+        const daysLeft = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        countdownEl.innerHTML = `Menuju 14 Mei 2025: (${daysLeft} hari lagi)`;
+      }
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Putar lagu saat klik
+    document.body.addEventListener("click", () => {
+      const audio = document.getElementById("myAudio");
+      audio.play().catch(error => console.log("Gagal memutar audio:", error));
+    });
+
+    // Slider dengan efek fade
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    let slideInterval;
+
+    function nextSlide() {
+      // Sembunyikan slide saat ini
+      slides[currentSlide].classList.remove('active');
+      
+      // Pindah ke slide berikutnya
+      currentSlide = (currentSlide + 1) % slides.length;
+      
+      // Tampilkan slide baru
+      slides[currentSlide].classList.add('active');
+    }
+
+    function startSlider() {
+      // Pastikan hanya satu slide yang aktif di awal
+      slides.forEach((slide, index) => {
+        slide.classList.toggle('active', index === 0);
+      });
+      
+      // Mulai interval
+      slideInterval = setInterval(nextSlide, 3000);
+    }
+
+    // Pause saat hover untuk interaksi pengguna
+    const sliderContainer = document.querySelector('.slider-container');
+    sliderContainer.addEventListener('mouseenter', () => {
+      clearInterval(slideInterval);
+    });
+    
+    sliderContainer.addEventListener('mouseleave', () => {
+      clearInterval(slideInterval);
+      slideInterval = setInterval(nextSlide, 3000);
+    });
+
+    // Mulai slider saat halaman dimuat
+    window.addEventListener('load', startSlider);
+  </script>
+
+</body>
+</html>
