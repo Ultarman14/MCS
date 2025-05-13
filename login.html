@@ -5,27 +5,37 @@
   <title>LOGIN.ULT</title>
   <style>
     body {
-      background: url('475b59c61a6efb3ec8ac0a57e43fd03b.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background: white;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       font-family: Arial, sans-serif;
+      margin: 0;
     }
 
     .login-box {
-      background: brown;
+      background: skyblue;
       padding: 30px;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
       text-align: center;
-      opacity: 85%;
     }
+
     .logo {
       width: 100px;
       margin-bottom: 20px;
-      opacity: 10%;
+      opacity: 0.5;
+    }
+
+    h1.title {
+      position: absolute;
+      top: 600px;
+      width: 100%;
+      text-align: center;
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+      color: brown;
     }
 
     input {
@@ -34,6 +44,7 @@
       margin: 10px 0;
       border: 1px solid #ccc;
       border-radius: 5px;
+      font-size: 14px;
     }
 
     button {
@@ -43,6 +54,7 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      font-size: 14px;
     }
 
     button:hover {
@@ -51,12 +63,11 @@
   </style>
 </head>
 <body>
-  <div style="position: absolute; top: 20px; text-align: center; width: 100%;">
-    <h1 style="font-family: 'great vibes', cursive; font-size:36px; color:brown;">PT MENCARI CINTA SEJATI </h1>
-  </div>
+
+  <h1 class="title">PT MENCARI CINTA SEJATI</h1>
 
   <div class="login-box">
-    <img src="images.png" alt="Logo" class="Logo">
+    <img src="images.png" alt="Logo" class="logo">
     <h2>SILAHKAN LOGIN</h2>
     <h2>UNTUK MASUK</h2>
     <input type="text" id="userID" placeholder="USERNAME"><br>
@@ -74,12 +85,13 @@
       const password = document.getElementById("password").value;
 
       if (userID === validID && password === validPassword) {
-        sessionStorage.setItem("userID", userID); // simpan untuk halaman kedua
-        window.location.href = "k.html";
+        sessionStorage.setItem("userID", userID);
+        window.location.href = "ultahh.html";
       } else {
         alert("Wah Salah Nih, CIUM DULU PACARNYA");
       }
     }
   </script>
+
 </body>
 </html>
